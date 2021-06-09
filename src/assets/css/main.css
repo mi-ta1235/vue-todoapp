@@ -1,0 +1,173 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #ffffff;
+}
+
+body {
+  /* background-color: rgb(12, 44, 85); */
+  background: linear-gradient(#225042, #2b2f4d);
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.big-text {
+  font-size: 40px;
+}
+
+.solid {
+  margin: 50px;
+}
+
+table {
+  width: 100%;
+  margin: 50px auto;
+  border-collapse: collapse;
+}
+
+thead th {
+  border-bottom: 2px solid #0099e4;
+  color: #ffffff;
+}
+
+th {
+  padding: 0 8px;
+  line-height: 40px;
+}
+
+.label-radio {
+  margin: 20px;
+}
+
+thead th.id {
+  width: 50px;
+}
+
+thead th.state {
+  width: 100px;
+}
+
+thead th.button {
+  width: 60px;
+}
+
+tbody td.button, tbody td.state {
+  text-align: center;
+}
+
+tbody tr td,
+tbody tr th {
+  border-bottom: 1px solid #ccc;
+  transition: all 0.4s;
+}
+
+tbody tr.done td,
+tbody tr.done th {
+  background: #f30000;
+  color: #bbb;
+}
+
+tbody tr:hover td,
+tbody tr:hover th {
+  background: #1b3c4e;
+}
+
+.done-task {
+  text-decoration: line-through 3px #c6d313;
+}
+
+.doing-state p {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  margin: 0;
+  transition: 0.2s;
+}
+
+.doing-state button:hover {
+  width: 100px;
+}
+
+.done-state p {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  margin: 0;
+  color: #888888;
+  transition: 0.2s;
+}
+
+.done-state button {
+  background-color: rgba(0, 0, 0, 0.329);
+}
+
+.done-state button:hover {
+  width: 100px;
+}
+
+button {
+  border: #0099e4 solid 2px;
+  border-radius: 20px;
+  line-height: 24px;
+  padding: 0 8px;
+  background: #0098e400;
+  color: #fff;
+  cursor: pointer;
+  width: 70px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0098e400;
+  border: springgreen solid 2px;
+}
+
+.add-content {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.add-form {
+  margin: 50px;
+  height: 40%;
+  
+}
+
+.add-form input {
+  width: 40%;
+  line-height: 36px;
+  border-radius: 20px;
+  text-align: center;
+  outline: none;
+  border: #0099e4 solid 2px;
+  transition: 0.2s;
+}
+
+.add-form input:focus{
+  width: 60%;
+  border: springgreen solid 2px;
+}
+
+.add-form input::placeholder {
+  text-align: center;
+}
+
+.todo-content {
+  margin: 0 30%;
+}
+
